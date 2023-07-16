@@ -1,0 +1,31 @@
+{
+  "name": "event-emitter",
+  "version": "0.0.0",
+  "description": "Decorator to emit class method's return value using custom events",
+  "type": "module",
+  "main": "lib/event-emitter.js",
+  "module": "lib/event-emitter.js",
+  "types": "lib/event-emitter.d.ts",
+  "files": [
+    "lib/event-emitter.js",
+    "lib/event-emitter.d.ts",
+    "lib/event-emitter.js.map"
+  ],
+  "keywords": [
+    "ClassMethodDecorator",
+    "TypeScript",
+    "events",
+    "decorator"
+  ],
+  "author": "Tony Spegel",
+  "license": "ISC",
+  "scripts": {
+    "build:watch": "tsc --watch",
+    "wds:serve": "wds"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.3.0",
+    "tslib": "^2.6.0",
+    "typescript": "^5.1.6"
+  }
+}
