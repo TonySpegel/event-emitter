@@ -1,5 +1,5 @@
 {
-  "name": "event-emitter",
+  "name": "event-emitter-decorator",
   "version": "0.0.0",
   "description": "Class method decorator to emit custom events",
   "type": "module",
