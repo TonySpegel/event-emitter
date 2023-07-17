@@ -1,7 +1,7 @@
 {
   "name": "event-emitter",
   "version": "0.0.0",
-  "description": "Decorator to emit class method's return value using custom events",
+  "description": "Class method decorator to emit custom events",
   "type": "module",
   "main": "lib/event-emitter.js",
   "module": "lib/event-emitter.js",
