@@ -60,7 +60,7 @@ After writing the [@queryAssignedElementContent](https://github.com/TonySpegel/q
 
 ## Installation
 ```bash
-npm i event-emitter-decorator
+npm i event-emitter-class-method-decorator
 ```
 
 ## Development
