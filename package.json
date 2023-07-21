@@ -1,6 +1,6 @@
 {
   "name": "event-emitter-class-method-decorator",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Class method decorator to emit custom events",
   "type": "module",
   "main": "lib/event-emitter.js",
@@ -27,5 +27,9 @@
     "@web/dev-server": "^0.3.0",
     "tslib": "^2.6.0",
     "typescript": "^5.1.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TonySpegel/event-emitter"
   }
 }

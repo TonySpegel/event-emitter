@@ -6,6 +6,8 @@ The decorator supports the latest (stage: 3) [TC39 proposal](https://github.com/
 
 Some notes:
 
+- An event name has to be set
+- The emitted event bubbles by default
 - using both `experimentalDecorators` and stage 3 decorators in the same file is not possible. In the same project for separate files this could work, but that needs some work and several tsconfig files.
 - This is experimental and may not work in every environment or framework
 
@@ -22,23 +24,23 @@ class EmitterClass {
   sum(a: number, b: number): number {
     return a + b;
   }
-  
-  // listen to: 'greetUser'
-  @eventEmitter()
-  greetUser(message: string): string {
-    return `Hello ${message}`;
-  }
 }
 ```
 The decorated method's return value is stored in the custom event's `detail` property (if not otherwise specified).
 
-`EmitterConfig` (optional) is set by extending `CustomEventInit`:
+### Customization
+`EmitterConfig` adds two properties to `CustomEventInit`:
 ```ts
 interface EmitterConfig extends CustomEventInit {
   /**
    * The event name you can listen to
    */
-  name?: string;
+  name: string;
+  /**
+   * The emitter for your events,
+   * by default the class instance itself (this)
+   */
+  emitter?: Window | Document;
 }
 ```
 Which includes: 
